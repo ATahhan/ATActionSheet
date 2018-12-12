@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		D6EEA66921C060EB001D7DC9 /* ATTAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = D6EEA66721C060EB001D7DC9 /* ATTAlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6EEA67221C06108001D7DC9 /* ATTAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EEA66F21C06108001D7DC9 /* ATTAlertController.swift */; };
+		D6EEA67321C06108001D7DC9 /* ATTAlertButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EEA67021C06108001D7DC9 /* ATTAlertButton.swift */; };
+		D6EEA67421C06108001D7DC9 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EEA67121C06108001D7DC9 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D6EEA66421C060EB001D7DC9 /* ATTAlertController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ATTAlertController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6EEA66721C060EB001D7DC9 /* ATTAlertController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATTAlertController.h; sourceTree = "<group>"; };
 		D6EEA66821C060EB001D7DC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6EEA66F21C06108001D7DC9 /* ATTAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATTAlertController.swift; sourceTree = "<group>"; };
+		D6EEA67021C06108001D7DC9 /* ATTAlertButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATTAlertButton.swift; sourceTree = "<group>"; };
+		D6EEA67121C06108001D7DC9 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +52,9 @@
 		D6EEA66621C060EB001D7DC9 /* ATTAlertController */ = {
 			isa = PBXGroup;
 			children = (
+				D6EEA67021C06108001D7DC9 /* ATTAlertButton.swift */,
+				D6EEA66F21C06108001D7DC9 /* ATTAlertController.swift */,
+				D6EEA67121C06108001D7DC9 /* Color.swift */,
 				D6EEA66721C060EB001D7DC9 /* ATTAlertController.h */,
 				D6EEA66821C060EB001D7DC9 /* Info.plist */,
 			);
@@ -95,6 +104,7 @@
 				TargetAttributes = {
 					D6EEA66321C060EB001D7DC9 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -130,6 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6EEA67221C06108001D7DC9 /* ATTAlertController.swift in Sources */,
+				D6EEA67321C06108001D7DC9 /* ATTAlertButton.swift in Sources */,
+				D6EEA67421C06108001D7DC9 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +274,7 @@
 		D6EEA66D21C060EB001D7DC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +292,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.AmmarAlTahhan.ATTAlertController;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +301,7 @@
 		D6EEA66E21C060EB001D7DC9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
