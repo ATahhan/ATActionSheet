@@ -8,10 +8,11 @@
 
 import UIKit
 
-public class ATTAlertButton: UIView {
+public class ATAction: UIView {
     
+    private let leftButtonPadding: CGFloat = 8
     private let imageViewWidth: CGFloat = 20
-    private let interImageTitleSpace: CGFloat = 16
+    private let interImageTitleSpace: CGFloat = 20
     
     private var button = UIButton()
     private var imageView = UIImageView()
@@ -60,28 +61,36 @@ public class ATTAlertButton: UIView {
     // MARK: - Setups
     
     private func setupView() {
-        button.setTitleColor(.whiteContent, for: .normal)
+        button.setTitleColor(.ATTextColor, for: .normal)
         addSubview(button)
         setButtonConstraints()
         if !isCancelButton {
             setupNotCancelView()
         } else {
-            backgroundColor = .lightMainColor
+            setupCancelButton()
         }
         
         setButtonAction()
     }
     
+    private func setupCancelButton() {
+        backgroundColor = .lightMainColor
+    }
+    
     private func setupNotCancelView() {
-        button.contentHorizontalAlignment = .leading
+        if #available(iOS 11.0, *) {
+            button.contentHorizontalAlignment = .leading
+        } else {
+            button.contentHorizontalAlignment = .left
+        }
         button.imageView?.contentMode = .scaleAspectFit
         imageView.contentMode = .scaleAspectFit
         imageView.image = imageView.image?.withRenderingMode(.alwaysTemplate)
-        imageView.tintColor = .lightGreyBackground
+        imageView.tintColor = .ATImageTintColor
         addSubview(imageView)
         bringSubviewToFront(button)
         setImageViewConstraints()
-        button.titleEdgeInsets = UIEdgeInsets(top: 0, left: imageViewWidth + interImageTitleSpace, bottom: 0, right: 0)
+        button.titleEdgeInsets = UIEdgeInsets(top: 0, left: leftButtonPadding + imageViewWidth + interImageTitleSpace, bottom: 0, right: 0)
     }
     
     private func setButtonConstraints() {
@@ -94,7 +103,7 @@ public class ATTAlertButton: UIView {
     
     private func setImageViewConstraints() {
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
+        imageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: leftButtonPadding).isActive = true
         imageView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
         imageView.topAnchor.constraint(equalTo: topAnchor).isActive = true
         imageView.widthAnchor.constraint(equalToConstant: imageViewWidth).isActive = true
