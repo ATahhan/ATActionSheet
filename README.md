@@ -11,7 +11,7 @@
 
 ## Installation
 
-Just add this project as a submidule to your project.
+Just add this project as a submodule to your project.
 
 or use [CocoaPods](https://cocoapods.org) with Podfile:
 
