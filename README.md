@@ -7,7 +7,7 @@
 ## Requirements
 
 - iOS 9.0+
-- Xcode 9.0.1
+- Xcode 9.3
 
 ## Installation
 
@@ -27,13 +27,13 @@ pod 'ATActionSheet'
 let actionSheet = ATActionSheet()
         
 let addButton = ATAction(title: "Add New Item", image: #imageLiteral(resourceName: "add")) {
-print("Added")
+    print("Added")
 }
 let shareButton = ATAction(title: "Share", image: #imageLiteral(resourceName: "action")) {
-print("Share")
+    print("Share")
 }
 let deleteButton = ATAction(title: "Delete", image: #imageLiteral(resourceName: "trash")) {
-print("Deleted")
+    print("Deleted")
 }
         
 actionSheet.addActions([addButton, shareButton, deleteButton])
@@ -45,8 +45,7 @@ present(actionSheet, animated: true, completion: nil)
 ATActionSheet is released under the MIT license.
 See [LICENSE](./LICENSE) for details.
 <br>
-<br>
 
-Follow me on Twitter<br>
+Contact me on Twitter<br>
 <a href="http://twitter.com/atahhan_" >
 <img src="https://cdn1.iconfinder.com/data/icons/iconza-circle-social/64/697029-twitter-128.png" width="120" height="120"></a>
