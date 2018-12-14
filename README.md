@@ -11,15 +11,12 @@
 
 ## Installation
 
-Just add CircleMenuLib folder to your project.
+Just add this project as a submidule to your project.
 
 or use [CocoaPods](https://cocoapods.org) with Podfile:
 
 ```ruby
 pod 'ATActionSheet'
-```
-```
-github "ATahhan/ATActionSheet"
 ```
 
 ## Usage
