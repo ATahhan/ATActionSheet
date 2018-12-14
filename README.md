@@ -1,7 +1,7 @@
 # ATActionSheet
 
 <a href="https://developer.apple.com/swift/"><img src="https://img.shields.io/badge/Swift-4.2-orange.svg?style=flat" style="max-height: 300px;" alt="Swift"/></a>
-<a href="https://cocoapods.org/pods/SSMP"><img src="https://img.shields.io/cocoapods/v/SSMP.svg" style="max-height: 300px;" alt="PodVersion"/></a>
+<a href="https://cocoapods.org/pods/ATActionSheet"><img src="https://img.shields.io/cocoapods/v/ATActionSheet.svg" style="max-height: 300px;" alt="PodVersion"/></a>
 <img src="https://img.shields.io/badge/platform-iOS-lightgrey.svg" style="max-height: 300px;" alt="Platform: iOS">
 
 ## Requirements
@@ -27,20 +27,20 @@ github "ATahhan/ATActionSheet"
 ##### programmatically
 
 ```swift
-        let actionSheet = ATActionSheet()
+let actionSheet = ATActionSheet()
         
-        let addButton = ATAction(title: "Add New Item", image: #imageLiteral(resourceName: "add")) {
-            print("Added")
-        }
-        let shareButton = ATAction(title: "Share", image: #imageLiteral(resourceName: "action")) {
-            print("Share")
-        }
-        let deleteButton = ATAction(title: "Delete", image: #imageLiteral(resourceName: "trash")) {
-            print("Deleted")
-        }
+let addButton = ATAction(title: "Add New Item", image: #imageLiteral(resourceName: "add")) {
+print("Added")
+}
+let shareButton = ATAction(title: "Share", image: #imageLiteral(resourceName: "action")) {
+print("Share")
+}
+let deleteButton = ATAction(title: "Delete", image: #imageLiteral(resourceName: "trash")) {
+print("Deleted")
+}
         
-        actionSheet.addActions([addButton, shareButton, deleteButton])
-        present(actionSheet, animated: true, completion: nil)
+actionSheet.addActions([addButton, shareButton, deleteButton])
+present(actionSheet, animated: true, completion: nil)
 ```
 
 ## Licence
