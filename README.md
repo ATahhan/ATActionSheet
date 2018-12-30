@@ -21,7 +21,7 @@ pod 'ATActionSheet'
 
 ## Usage
 
-##### programmatically
+##### Programmatically
 
 ```swift
 let actionSheet = ATActionSheet()
@@ -29,10 +29,10 @@ let actionSheet = ATActionSheet()
 let addButton = ATAction(title: "Add New Item", image: #imageLiteral(resourceName: "add")) {
     print("Added")
 }
-let shareButton = ATAction(title: "Share", image: #imageLiteral(resourceName: "action")) {
+let shareButton = ATAction(title: "Share", image: #imageLiteral(resourceName: "action"), style: .default) {
     print("Share")
 }
-let deleteButton = ATAction(title: "Delete", image: #imageLiteral(resourceName: "trash")) {
+let deleteButton = ATAction(title: "Delete", image: #imageLiteral(resourceName: "trash"), style: .destructive) {
     print("Deleted")
 }
         
