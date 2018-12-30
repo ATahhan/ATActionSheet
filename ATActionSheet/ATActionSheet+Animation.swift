@@ -23,7 +23,7 @@ extension ATActionSheet {
     }
     
     func hideController(completion: ((Bool)->Void)? = nil) {
-        UIView.animate(withDuration: 0.55, delay: 0, usingSpringWithDamping: 0.85, initialSpringVelocity: 0.04, options: .curveLinear, animations: {
+        UIView.animate(withDuration: 0.55, delay: 0, usingSpringWithDamping: 0.85, initialSpringVelocity: 0.02, options: .curveLinear, animations: {
             self.alertView.transform = CGAffineTransform(translationX: 0, y: self.alertView.frame.height)
             self.backgroundView.alpha = 0
         }) { bool in

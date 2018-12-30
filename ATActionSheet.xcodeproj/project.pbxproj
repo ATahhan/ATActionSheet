@@ -10,6 +10,7 @@
 		D66501F021C1699B0087F463 /* ATActionSheet+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66501EF21C1699B0087F463 /* ATActionSheet+Animation.swift */; };
 		D66501F221C16A080087F463 /* HandleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66501F121C16A080087F463 /* HandleView.swift */; };
 		D66501F621C1833B0087F463 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66501F521C1833B0087F463 /* Extensions.swift */; };
+		D68C868021D908B000B8BF8D /* ATAction+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68C867F21D908B000B8BF8D /* ATAction+Style.swift */; };
 		D6EEA66921C060EB001D7DC9 /* ATActionSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = D6EEA66721C060EB001D7DC9 /* ATActionSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D6EEA67221C06108001D7DC9 /* ATActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EEA66F21C06108001D7DC9 /* ATActionSheet.swift */; };
 		D6EEA67321C06108001D7DC9 /* ATAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EEA67021C06108001D7DC9 /* ATAction.swift */; };
@@ -20,6 +21,7 @@
 		D66501EF21C1699B0087F463 /* ATActionSheet+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ATActionSheet+Animation.swift"; sourceTree = "<group>"; };
 		D66501F121C16A080087F463 /* HandleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleView.swift; sourceTree = "<group>"; };
 		D66501F521C1833B0087F463 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D68C867F21D908B000B8BF8D /* ATAction+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ATAction+Style.swift"; sourceTree = "<group>"; };
 		D6EEA66421C060EB001D7DC9 /* ATActionSheet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ATActionSheet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6EEA66721C060EB001D7DC9 /* ATActionSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATActionSheet.h; sourceTree = "<group>"; };
 		D6EEA66821C060EB001D7DC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				D66501EF21C1699B0087F463 /* ATActionSheet+Animation.swift */,
 				D66501F521C1833B0087F463 /* Extensions.swift */,
 				D6EEA67021C06108001D7DC9 /* ATAction.swift */,
+				D68C867F21D908B000B8BF8D /* ATAction+Style.swift */,
 				D66501F121C16A080087F463 /* HandleView.swift */,
 				D6EEA67121C06108001D7DC9 /* Color.swift */,
 				D6EEA66721C060EB001D7DC9 /* ATActionSheet.h */,
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6EEA67221C06108001D7DC9 /* ATActionSheet.swift in Sources */,
+				D68C868021D908B000B8BF8D /* ATAction+Style.swift in Sources */,
 				D66501F621C1833B0087F463 /* Extensions.swift in Sources */,
 				D66501F221C16A080087F463 /* HandleView.swift in Sources */,
 				D66501F021C1699B0087F463 /* ATActionSheet+Animation.swift in Sources */,

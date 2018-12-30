@@ -15,11 +15,6 @@ extension UIColor {
         return UIColor(rgb: 0xFBFFFF)
     }
     
-    /// Hex = 0xCB3960
-    class var ATDestructiveColor: UIColor {
-        return UIColor(rgb: 0xCB3960)
-    }
-    
     /// Hex = 0x8A98A4
     class var ATImageTintColor: UIColor {
         return UIColor(rgb: 0x8A98A4)

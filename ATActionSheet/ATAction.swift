@@ -19,6 +19,7 @@ public class ATAction: UIView {
     
     private var onTapCompletion: (()->Void)?
     private var isCancelButton: Bool
+    private var _style: ATAction.Style
     
     public override var bounds: CGRect {
         didSet {
@@ -28,12 +29,14 @@ public class ATAction: UIView {
             }
         }
     }
+    public var style: ATAction.Style { return _style }
     
     // MARK: - Initializers
     
     private override init(frame: CGRect) {
         isCancelButton = false
         onTapCompletion = nil
+        _style = .default
         super.init(frame: frame)
     }
     
@@ -41,12 +44,13 @@ public class ATAction: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    public convenience init(title: String, image: UIImage? = nil, completion: @escaping ()->Void) {
+    public convenience init(title: String, image: UIImage? = nil, style: ATAction.Style = .default, completion: @escaping ()->Void) {
         self.init()
         button.setTitle(title, for: .normal)
         imageView.image = image
         onTapCompletion = completion
         isCancelButton = false
+        _style = style
         setupView()
     }
     
@@ -61,7 +65,7 @@ public class ATAction: UIView {
     // MARK: - Setups
     
     private func setupView() {
-        button.setTitleColor(.ATTextColor, for: .normal)
+        button.setTitleColor(style == .default ? .ATTextColor : .ATDestructiveColor, for: .normal)
         addSubview(button)
         setButtonConstraints()
         if !isCancelButton {
@@ -86,7 +90,7 @@ public class ATAction: UIView {
         button.imageView?.contentMode = .scaleAspectFit
         imageView.contentMode = .scaleAspectFit
         imageView.image = imageView.image?.withRenderingMode(.alwaysTemplate)
-        imageView.tintColor = .ATImageTintColor
+        imageView.tintColor = style == .default ? .ATImageTintColor : .ATDestructiveColor
         addSubview(imageView)
         bringSubviewToFront(button)
         setImageViewConstraints()
