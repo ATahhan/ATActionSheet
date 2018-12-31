@@ -4,6 +4,8 @@
 <a href="https://cocoapods.org/pods/ATActionSheet"><img src="https://img.shields.io/cocoapods/v/ATActionSheet.svg" style="max-height: 300px;" alt="PodVersion"/></a>
 <img src="https://img.shields.io/badge/platform-iOS-lightgrey.svg" style="max-height: 300px;" alt="Platform: iOS">
 
+<img align="left" src="https://github.com/ATahhan/ATActionSheet/tree/master/Screenshots/ATActionSheet.gif" width="404" height="720" /></a>
+
 ## Requirements
 
 - iOS 9.0+
